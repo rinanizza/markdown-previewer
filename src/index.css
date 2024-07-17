@@ -31,7 +31,7 @@ textarea {
 
 #preview {
   width: 60%;
-  height: 160vh;
+  height: 180vh;
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #525354;
@@ -63,4 +63,99 @@ textarea {
 
 #preview h2 {
   border-bottom: 1px solid #224b4b;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .previewWrap {
+    max-width: 630px;
+  }
+
+  .editorWrap {
+    max-width: 550px;
+  }
+}
+.maximized {
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+}
+.maximized textarea {
+  min-height: 95vh;
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    margin: 5px 0;
+  }
+
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .maximized {
+    width: 95%;
+    margin: auto;
+  }
+
+  .previewWrap {
+    width: 90vw;
+  }
+}
+#preview {
+  padding: 0 1rem;
+}
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#preview > p > code {
+  padding: 3px;
+}
+#preview code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+}
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+}
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 0.875rem;
+  }
 }
